@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Litpalm - Penjualan Litpalm Terbaik</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <h1>Litpalm</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Beranda</a></li>
+                    <li><a href="#">Produk</a></li>
+                    <li><a href="#">Kontak</a></li>
+                    <li><a href="#keranjang">Keranjang <span id="cart-count">0</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Litpalm - Solusi Cerdas untuk Energi Anda</h2>
+            <p>Produk unggulan kami untuk kebutuhan energi yang lebih efisien.</p>
+            <a href="#produk" class="btn-cta">Lihat Produk</a>
+        </div>
+    </section>
+
+   <section id="produk" class="produk-section">
+    <h2>Produk Kami</h2>
+    <div class="produk-container">
+        <!-- Product 1 -->
+        <div class="produk-card">
+            <img src="images/tandan-buah-segar.png" alt="Litpalm 1">
+            <h3>Litpalm Series 1</h3>
+            <p>Harga: Rp 1.500.000</p>
+            <button onclick="addToCart('Litpalm Series 1', 1500000, 'images/tandan-buah-segar.png')">Tambah ke Keranjang</button>
+        </div>
+        <!-- Product 2 -->
+        <div class="produk-card">
+            <img src="images/group-oil-palm-fruits-on-260nw-118254184.webp" alt="Litpalm 2">
+            <h3>Litpalm Series 2</h3>
+            <p>Harga: Rp 2.000.000</p>
+            <button onclick="addToCart('Litpalm Series 2', 2000000, 'images/group-oil-palm-fruits-on-260nw-118254184.webp')">Tambah ke Keranjang</button>
+        </div>
+        <!-- Product 3 -->
+        <div class="produk-card">
+            <img src="images/pngtree-oil-palm-fruits-whole-and-cut-in-half-with-leaves-isolated-png-image_14752049.png" alt="Litpalm 3">
+            <h3>Litpalm Series 3</h3>
+            <p>Harga: Rp 2.500.000</p>
+            <button onclick="addToCart('Litpalm Series 3', 2500000, 'images/pngtree-oil-palm-fruits-whole-and-cut-in-half-with-leaves-isolated-png-image_14752049.png')">Tambah ke Keranjang</button>
+        </div>
+    </div>
+</section>
+
+
+    <section id="keranjang" class="keranjang-section">
+        <h2>Keranjang Belanja</h2>
+        <div id="cart-items"></div>
+        <p>Total Harga: Rp <span id="total-price">0</span></p>
+        <button onclick="clearCart()">Hapus Semua</button>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Litpalm. Semua hak dilindungi.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
